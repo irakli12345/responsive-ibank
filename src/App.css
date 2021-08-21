@@ -1,2 +1,36 @@
 .App {
 }
+.bankAccount {
+  border: 2px solid red;
+  margin: 1rem;
+}
+.CreditCards {
+  border: 2px solid black;
+  margin: 1rem;
+}
+.ExchangeRates {
+  border: 2px solid gold;
+  margin: 1rem;
+}
+.chart {
+  border: 2px solid seagreen;
+  margin: 1rem;
+}
+.payment {
+  border: 2px solid blue;
+  margin: 1rem;
+}
+.transactions {
+  border: 2px solid violet;
+  margin: 1rem;
+}
+.transaction {
+  border: 2px solid hotpink;
+}
+.greeting {
+  border: 2px solid palegreen;
+  margin: 1rem;
+}
+.top {
+  border: 2px solid black;
+}
