@@ -1,14 +1,12 @@
-
-function ExchangeRates() {
-    return (
-        <div className="ExchangeRates">
-            <p>Current Exchange Rates:
-                $ - 3.12
-                € - 3.63
-                £ - 4.26
-            </p>
-        </div>
-    )
+function ExchangeRates({ rates }) {
+  return (
+    <div className="ExchangeRates">
+      <p className="largerText">Current Exchange Rates:</p>
+      <p>$ - {rates.usd}</p>
+      <p>€ - {rates.eur}</p>
+      <p>£ - {rates.gbp}</p>
+    </div>
+  );
 }
 
-export default ExchangeRates
+export default ExchangeRates;

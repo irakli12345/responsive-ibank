@@ -9,24 +9,54 @@ import Payment from "./Components/Payment";
 import ExpensesChart from "./Components/ExpensesChart";
 import Greeting from "./Components/Greeting";
 function App() {
-  const [balance, setBalance] = useState(100);
+  const [user, setUser] = useState(100);
+  const [transactions, setTransactions] = useState([]);
+  const [rates, setRates] = useState({});
+  useEffect(() => {
+    const getTransactions = async () => {
+      const data = await fetchData("http://localhost:3000/transactions");
+      setTransactions(data);
+    };
+    getTransactions();
+  }, []);
+  useEffect(() => {
+    const getUser = async () => {
+      const data = await fetchData("http://localhost:3000/user");
+      setUser(data);
+    };
+    getUser();
+  }, []);
+  useEffect(() => {
+    const getRates = async () => {
+      const data = await fetchData("http://localhost:3000/rates");
+      setRates(data);
+    };
+    getRates();
+  }, []);
+  const fetchData = async (source) => {
+    const res = await fetch(source);
+    const data = await res.json();
+    return data;
+  };
   return (
     <div className="App">
       <div className="top">
         {" "}
-        <Greeting></Greeting>
-        <BankAccount balance={balance}></BankAccount>
+        <Greeting firstName={"Irakli"}></Greeting>
+        <BankAccount balance={user.startingBalance}></BankAccount>
         <CreditCards></CreditCards>
         <Payment></Payment>
       </div>
       <div className="body">
-        {" "}
-        <Transactions></Transactions>
-        <ExpensesChart></ExpensesChart>
-      </div>
-      <div className="sidebar">
-        {" "}
-        <ExchangeRates></ExchangeRates>
+        <div className="main">
+          {" "}
+          <Transactions></Transactions>
+          <ExpensesChart></ExpensesChart>
+        </div>
+        <div className="sidebar">
+          {" "}
+          <ExchangeRates rates={rates}></ExchangeRates>
+        </div>
       </div>
     </div>
   );

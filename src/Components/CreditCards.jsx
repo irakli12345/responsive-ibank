@@ -1,9 +1,12 @@
 function CreditCards() {
     return (
         <div className="CreditCards">
-         <h1>Your Credit Cards:</h1>
-         <p>5555555555554444</p>   
-         <p>1223351223557081</p>  
+         <p className="largerText">Your Credit Cards:</p>
+         <div className="cardNumbers">        
+         <p>*********4444</p>   
+         <p>*********7081</p>
+          </div>
+ 
         </div>
     )
 }

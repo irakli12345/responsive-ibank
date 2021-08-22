@@ -1,0 +1,83 @@
+{
+  "transactions": [
+    {
+      "dayOfAugust": 21,
+      "description": "Bought Dog Food at the Vet's Office",
+      "expenseClassification": "miscellaneous",
+      "amount": 40,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 22,
+      "description": "Paid for dentist's services",
+      "expenseClassification": "health",
+      "amount": 120,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 22,
+      "description": "Bought the pain medication for my tooth",
+      "expenseClassification": "health",
+      "amount": 25,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 23,
+      "description": "Bought bread, cheese and meat at the supermarket",
+      "expenseClassification": "Groceries",
+      "amount": 65,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 23,
+      "description": "Saw the movie 'Suicide Squad' with friends",
+      "expenseClassification": "entertainment",
+      "amount": 45,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 24,
+      "description": "Took a taxi home",
+      "expenseClassification": "transportation",
+      "amount": 10,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 25,
+      "description": "Got the money out of the ATM",
+      "expenseClassification": "Cash Withdrawal",
+      "amount": 100,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 25,
+      "description": "Booked train tickets to Batumi",
+      "expenseClassification": "transportation",
+      "amount": 40,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 25,
+      "description": "Booked Apartment in Batumi",
+      "expenseClassification": "entertainment",
+      "amount": 200,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 23,
+      "description": "Bought a treat for my two dogs",
+      "expenseClassification": "miscellaneous",
+      "amount": 15,
+      "currency": "GEL"
+    },
+    {
+      "dayOfAugust": 24,
+      "description": "Went back to the doctor for check-up",
+      "expenseClassification": "health",
+      "amount": 60,
+      "currency": "GEL"
+    }
+  ],
+  "user": { "fullName": "Irakli Tchigladze", "startingBalance": 1000 },
+  "rates": { "usd": 3.14, "eur": 3.67, "gbp": 4.35 }
+}

@@ -1,36 +1,79 @@
 .App {
+  box-sizing: content-box;
 }
-.bankAccount {
-  border: 2px solid red;
-  margin: 1rem;
-}
-.CreditCards {
-  border: 2px solid black;
-  margin: 1rem;
-}
+
 .ExchangeRates {
-  border: 2px solid gold;
-  margin: 1rem;
+  text-align: center;
 }
 .chart {
-  border: 2px solid seagreen;
   margin: 1rem;
 }
-.payment {
-  border: 2px solid blue;
-  margin: 1rem;
-}
+
 .transactions {
-  border: 2px solid violet;
-  margin: 1rem;
 }
 .transaction {
   border: 2px solid hotpink;
 }
-.greeting {
-  border: 2px solid palegreen;
-  margin: 1rem;
-}
+
 .top {
-  border: 2px solid black;
+  display: flex;
+  background-color: #09121f;
+  color: white;
 }
+.top > * {
+  flex-basis: 15%;
+}
+.greeting {
+  flex-basis: 15%;
+  margin-left: 1em;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+.payment {
+  margin: 1rem;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bankAccount {
+}
+.balance {
+  display: flex;
+  align-items: center;
+}
+.largerText {
+  font-size: 20px;
+}
+.CreditCards {
+  text-align: center;
+}
+.cardNumbers {
+  display: flex;
+  justify-content: space-around;
+}
+.cardNumbers > p {
+  display: inline;
+}
+.main {
+  width: 60%;
+  display: inline-flex;
+  flex-direction: column;
+  border: 2px solid rgb(202, 192, 202);
+}
+.body {
+  width: 80%;
+  margin: 1em auto;
+  background-color: yellow;
+  display: flex;
+}
+.sidebar {
+  width: 25%;
+  display: inline-flex;
+  border: 2px solid green;
+  margin: 0;
+}
+/* On smaller screens, make .bankAccount and CreditCards have flex-grow of 2, so that they're larger. on this one, keep them*/
