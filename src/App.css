@@ -12,6 +12,26 @@
 .transactions {
 }
 .transaction {
+  border-bottom: 2px solid white;
+  margin-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.transaction > p {
+  padding: 5px;
+  flex-basis: 20%;
+}
+.transaction > p:first-child {
+  flex-grow: 3;
+}
+
+/* #expense {
+  margin-left: auto;
+} */
+
+.transaction:hover {
+  margin-left: 1em;
 }
 
 .top {
@@ -47,6 +67,7 @@
 .largerText {
   font-size: 20px;
 }
+
 .CreditCards {
   text-align: center;
 }
@@ -66,17 +87,16 @@
   width: 80%;
   margin: 1em auto;
   background-color: #520002;
-
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
-.body:hover {
   background: linear-gradient(
     90deg,
     rgba(82, 0, 2, 1) 11%,
     rgba(31, 22, 9, 1) 97%
   );
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.body:hover {
 }
 .sidebar {
   width: 25%;

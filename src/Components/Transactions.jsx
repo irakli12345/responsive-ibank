@@ -4,7 +4,7 @@ function Transactions({ transactionsData }) {
     <div className="transactions">
       <p className="largerText">This will be a list of transactions</p>
       {transactionsData.map((transaction) => (
-        <h1>boo</h1>
+        <Transaction individualTransaction={transaction}></Transaction>
       ))}
     </div>
   );
