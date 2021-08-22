@@ -1,15 +1,13 @@
-import Transaction from "./Transacton"
-function Transactions() {
-    return (
-        <div className="transactions">
-            <h1>This will be a list of transactions</h1>
-            <Transaction id={1}></Transaction>
-            <Transaction id={2}></Transaction>
-            <Transaction id={3}></Transaction>
-            <Transaction id={4}></Transaction>
-
-        </div>
-    )
+import Transaction from "./Transacton";
+function Transactions({ transactionsData }) {
+  return (
+    <div className="transactions">
+      <p className="largerText">This will be a list of transactions</p>
+      {transactionsData.map((transaction) => (
+        <h1>boo</h1>
+      ))}
+    </div>
+  );
 }
 
-export default Transactions
+export default Transactions;

@@ -12,7 +12,6 @@
 .transactions {
 }
 .transaction {
-  border: 2px solid hotpink;
 }
 
 .top {
@@ -62,18 +61,34 @@
   width: 60%;
   display: inline-flex;
   flex-direction: column;
-  border: 2px solid rgb(202, 192, 202);
 }
 .body {
   width: 80%;
   margin: 1em auto;
-  background-color: yellow;
+  background-color: #520002;
+
   display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.body:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(82, 0, 2, 1) 11%,
+    rgba(31, 22, 9, 1) 97%
+  );
 }
 .sidebar {
   width: 25%;
   display: inline-flex;
-  border: 2px solid green;
+  justify-content: center;
   margin: 0;
 }
-/* On smaller screens, make .bankAccount and CreditCards have flex-grow of 2, so that they're larger. on this one, keep them*/
+/* On smaller screens, make .bankAccount and CreditCards have flex-grow of 2, so that they're larger. on this one, keep them
+
+https://cssgradient.io/
+https://www.canva.com/colors/color-wheel/
+https://99designs.com/blog/web-digital/dark-mode/
+
+
+*/

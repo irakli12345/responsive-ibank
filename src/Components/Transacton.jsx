@@ -1,10 +1,9 @@
-
-function Transacton({id}) {
-    return (
-        <div className="transaction">
-            <h2>Sample transaction {id}</h2>
-        </div>
-    )
+function Transacton({ id }) {
+  return (
+    <div className="transaction">
+      <p>Sample transaction {id}</p>
+    </div>
+  );
 }
 
-export default Transacton
+export default Transacton;

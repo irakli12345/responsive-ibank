@@ -50,7 +50,7 @@ function App() {
       <div className="body">
         <div className="main">
           {" "}
-          <Transactions></Transactions>
+          <Transactions transactionsData={transactions}></Transactions>
           <ExpensesChart></ExpensesChart>
         </div>
         <div className="sidebar">
